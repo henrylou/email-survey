@@ -2,11 +2,15 @@
   "name": "email-survey",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "8.9.4",
+    "npm": "6.3.0"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "hylou",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3"
