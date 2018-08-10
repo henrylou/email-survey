@@ -72,5 +72,5 @@ typings/
 # Serverless directories
 .serverless
 
-# Secret keys
-keys.js
+# Secret development keys
+dev.js
