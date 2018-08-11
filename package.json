@@ -1,7 +1,7 @@
 {
   "name": "email-survey",
   "version": "1.0.0",
-  "description": "",
+  "description": "Email Survey based on ReactJS, NodeJS and MongoDB",
   "engines": {
     "node": "8.9.4",
     "npm": "6.3.0"
@@ -9,11 +9,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "hylou",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^3.6.1",
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.3",
     "mongoose": "^5.2.7",
